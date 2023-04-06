@@ -10,8 +10,7 @@ app.use(
 app.get("/*", function (req, res) {
   res.sendFile(
     path.join(
-      __dirname +
-        "/dist/101190443_comp3133_assig2/101190443_comp3133_assig2/src/index.html"
+      __dirname + "/dist/101190443_comp3133_assig2/101190443_comp3133_assig2"
     )
   );
 });

@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "heroku-postbuild": "ng build --configuration production",
-    "postinstall": "ng build --aot --configuration production"
+    "postinstall": "ng build --aot --configuration production",
+    "query": "node index.js"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,16 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@apollo/client": "^3.0.0",
+    "apollo-angular": "^4.2.1",
+    "apollo-server": "^3.12.0",
+    "apollo-server-errors": "^3.3.1",
+    "bcryptjs": "^2.4.3",
     "express": "^4.18.2",
+    "graphql": "^16",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22",
     "path": "^0.12.7",
     "rxjs": "~7.8.0",
     "save-dev": "^0.0.1-security",
@@ -43,8 +53,8 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.9.4"
   },
-  "engines":{ 
-    "node": "18.13.0", 
+  "engines": {
+    "node": "18.13.0",
     "npm": "9.4.0"
   }
 }

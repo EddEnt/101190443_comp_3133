@@ -30,8 +30,8 @@ export class LoginComponent {
         email: this.email,
         password: this.password
       }
-    }).subscribe((result: MutationResult<{ login: { token: string } }>) => {
-      localStorage.setItem('token', result.data.login.token);
+    }).subscribe((result: MutationResult) => {
+      console.log(result);
     });
   }
 }

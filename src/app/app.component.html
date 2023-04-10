@@ -1,8 +1,5 @@
 <p>Employees</p>
 
-<div *ngIf="loading">
-  Loading...
-</div>
 
 <table class="table">
   <thead>
@@ -13,8 +10,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let users of users">
-      <!--<th scope="row">{{ users.first_name }}</th>
+    <tr>
+    <!--<tr *ngFor="let users of users">
+      <th scope="row">{{ users.first_name }}</th>
       <th scope="row">{{ users.last_name }}</th>
       <th scope="row">{{ users.email }}</th> -->
     </tr>

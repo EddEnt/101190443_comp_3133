@@ -9,6 +9,10 @@ import { APOLLO_OPTIONS } from 'apollo-angular';
 import { InMemoryCache } from '@apollo/client/core';
 import { AppComponent } from './app.component';
 
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent

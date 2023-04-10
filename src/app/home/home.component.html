@@ -1,0 +1,22 @@
+<p>Books</p>
+
+<div *ngIf="loading">
+  Loading...
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <!--<th scope="row">{{ users.first_name }}</th>
+      <th scope="row">{{ users.last_name }}</th>
+      <th scope="row">{{ users.email }}</th> -->
+    </tr>
+  </tbody>
+</table>
